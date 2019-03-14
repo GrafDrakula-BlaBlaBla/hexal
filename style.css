@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Lato-Regular', 'Lato-Bold', 'MavenPro-Regular', sans-serif;
-}
-
 a {
     text-decoration: none;
     text-transform: none;
@@ -17,8 +13,14 @@ li {
     list-style: none;
 }
 
+body {
+    font-family: 'Lato-Regular', 'Lato-Bold', 'MavenPro-Regular', sans-serif;
+}
+
+
+
 .bg-header {
-    background: rgba(50, 50, 50); 
+    background: #323232; 
 }
 
 .wrapper {
@@ -73,6 +75,7 @@ li {
                         margin-right: 25px;
                         margin-left: 25px;
                     }
+
 .snake-hexagon {
     margin: 90px 0; 
 }
@@ -121,7 +124,7 @@ li {
 
             .caption {
                 font-size: 1.125em;
-                font-family: "Maven Pro", sans-serif;
+                font-family: "MavenPro-Regular", sans-serif;
                 color: rgb(36, 142, 120);      
             }
 
@@ -144,45 +147,187 @@ li {
                 position: absolute;
                 bottom: 0;
                 right: -4px;
-                opacity: 0.2;
+                
             }
 
                 .icons .facebook li {
                     width: 25px;
                     height: 24px;
                     background-image: url(./assets/img/Facebook.png);
-                    color: #fff;
+                    transition: 1s;
                 }
+                    .icons .facebook li:hover {
+                        opacity: 0.4;
+                    }
 
                 .icons .twitter li {
                     width: 25px;
                     height: 24px;
                     background-image: url(./assets/img/Twitter.png);
+                    transition: 1s;
                 }
+                    .icons .twitter li:hover {
+                        opacity: 0.6;
+                    }
 
                 .icons .google li {
                     width: 25px;
                     height: 24px;
                     background-image: url(./assets/img/Google.png);
+                    transition: 1s;
                 }
+                    .icons .google li:hover {
+                        opacity: 0.6;
+                    }
 
                 .icons .pintrest li {
                     width: 25px;
                     height: 24px;
                     background-image: url(./assets/img/Pinterest.png);
+                    transition: 1s;
                 }
+                    .icons .pintrest li:hover {
+                        opacity: 0.4;
+                    }
 
                 .icons .linkin li {
                     width: 25px;
                     height: 24px;
                     background-image: url(./assets/img/Linkedin.png);
+                    transition: 1s;
                 }
+                    .icons .linkin li:hover {
+                        opacity: 0.4;
+                    }
+                
 
-                .icons .dribble li {
+                .icons .dribbble li {
                     width: 25px;
                     height: 24px;
                     background-image: url(./assets/img/Dribbble.png);
                 }
+                    .icons .dribbble li:hover {
+                        opacity: 0.6;
+                    }    
+
+.bg-form {
+    height: 564px;
+    background: #323232;
+}
+    .common-blok {
+        display: flex;
+        max-width: 100%;
+        padding: 60px 0;
+    }
+        .blok-form {
+            width: 70%;
+            margin-left: 20px;
+        }
+
+        .blok-form h2 {
+            font-size: 1.875em;
+            font-family: "MavenPro-Regular", sans-serif;
+            color: rgb(224, 224, 224);
+            font-weight: lighter;
+          }
+
+          .blok-form p {
+            font-size: 1.125em;
+            font-family: "MavenPro-Regular", sans-serif;
+            color: rgb(224, 224, 224);
+            font-weight: lighter;
+          }
+          
+            .blok-form form {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                height: auto;
+                margin-top: 16px;
+            }
+
+            #feetback input {
+                height: 38px;
+                margin: 8px 0;
+                padding-left: 16px;
+                font-size: 0.75em;
+                font-family: "MavenPro-Regular", sans-serif;
+                color: rgb(190, 190, 190);
+                background: #454545;
+                border: none;
+            }
+
+            #feetback #messege {
+                margin: 8px 0 16px;
+                padding-left: 16px;
+                padding-top: 14px;
+                font-size: 0.75em;
+                font-family: "MavenPro-Regular", sans-serif;
+                color: rgb(190, 190, 190);
+                background: #454545;
+                border:none;
+            }
+
+            .button {
+                position: absolute;
+                right: 0;
+                bottom: -37px;
+                box-sizing: border-box;
+                width: 90px;
+                padding: 14px 30px;
+                text-transform: uppercase;
+                color: #fff;
+                background: #2eb398;
+                border: none;
+                cursor: pointer;
+            }
+
+.blok-info {
+    max-width: 180px;
+    height: auto;
+    margin-left: 20px;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+    .blok-info p {
+        margin-bottom: 45px;
+        font-size: 0.75em;
+        font-family: "Lato-Regular", sans-serif;
+        text-align: justify;
+        color: #8f8f8f;
+        line-height: 1.5;
+        font-weight: lighter;
+    } 
+        .blok-info p span {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .blok-info img {
+            margin-right: 20px;
+        }
+
+        .blok-info .location, .phone, .email {
+            align-content: center;
+            margin: 7px 0;
+            font-size: 0.75em;
+            font-family: 'Lato-Regular';
+            color: rgb(190, 190, 190);
+            font-weight: bold;
+        }
+
+footer {
+    width: 100%;
+    background: #222;
+}
+    footer>address {
+        padding: 17px 0 17px 40px;
+        font-size: 0.625em;
+        font-family: "MavenPro-Regular";
+        color: rgb(69, 69, 69);     
+    }  
+      
             
               
 
